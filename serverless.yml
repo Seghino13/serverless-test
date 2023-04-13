@@ -39,6 +39,12 @@ functions:
       - http:
           path: users/{id}
           method: GET
+  test:
+    handler: test/handler.testFunction
+    events:
+      - http:
+          path: test
+          method: GET
   create-users:
     handler: createUsers/handler.createUsers
     events:
